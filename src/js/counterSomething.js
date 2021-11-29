@@ -1,8 +1,6 @@
 import countSomTmpl from '../templates/countSomTmpl';
 // <ul></ul> в якому шукатимемо кляц <li></li>
 
-
-
 export default function counterSomething(startCount, currentCount, endCount, foo) {
   if (startCount < 1 || currentCount < 1 || endCount < 1) return;
 
@@ -68,35 +66,53 @@ export default function counterSomething(startCount, currentCount, endCount, foo
     currentCount = count;
     makeupCounter(startCount, currentCount, endCount, list);
   });
-  
 };
 
 function makeupCounter(start, target, end, list) {
   const arrowLeft = '<-'; // вставити щось краще
   const arrowRight = '->';
 
-  list.querySelector('.count__start').textContent = start;
   list.querySelector('.count__up').textContent = arrowLeft;
+
+  if (target <= start + 2)
+  { list.querySelector('.count__start').classList.add('is-hidden') } else {
+    list.querySelector('.count__start').classList.remove('is-hidden');
+    list.querySelector('.count__start').textContent = start
+  };
+
   if (target - 2 < start)
   { list.querySelector('.count__minus-two').classList.add('is-hidden') } else {
     list.querySelector('.count__minus-two').classList.remove('is-hidden');
-    list.querySelector('.count__minus-two').textContent = target - 2};
+    list.querySelector('.count__minus-two').textContent = target - 2
+  };
+  
   if (target - 1 < start)
   { list.querySelector('.count__minus-one').classList.add('is-hidden') } else {
     list.querySelector('.count__minus-one').classList.remove('is-hidden');
     list.querySelector('.count__minus-one').textContent = target - 1
   };
+
   list.querySelector('.count__current').textContent = target;
+
   if (target + 1 > end)
   { list.querySelector('.count__plus-one').classList.add('is-hidden') } else {
     list.querySelector('.count__plus-one').classList.remove('is-hidden');
-    list.querySelector('.count__plus-one').textContent = target + 1;}
+    list.querySelector('.count__plus-one').textContent = target + 1
+  };
+  
   if (target + 2 > end)
   { list.querySelector('.count__plus-two').classList.add('is-hidden') } else {
     list.querySelector('.count__plus-two').classList.remove('is-hidden');
-    list.querySelector('.count__plus-two').textContent = target + 2};
+    list.querySelector('.count__plus-two').textContent = target + 2
+  };
+
+  if (target >= end-2)
+  { list.querySelector('.count__end').classList.add('is-hidden') } else {
+    list.querySelector('.count__end').classList.remove('is-hidden');
+    list.querySelector('.count__end').textContent = end
+  };
+
   list.querySelector('.count__down').textContent = arrowRight;
-  list.querySelector('.count__end').textContent = end;
 };
 
 function markupCounter(classLink) {
