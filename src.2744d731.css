@@ -1,2 +1,2 @@
 .is-hidden{display:none}.count{font-weight:500;font-size:12px;line-height:1.333}.count__list{flex-flow:row;list-style:none}.count__item,.count__list{display:flex;justify-content:center}.count__item{align-items:center;min-width:40px;height:40px;border-radius:5px}.count__item:hover{cursor:pointer}.count__item.is-hidden{display:none}.count__current{color:#fff;background-color:#ff6b08}.count__arrow{background-color:#f7f7f7}.count__decor:hover{cursor:default}@media screen and (max-width:767px){.count__decor,.count__end,.count__start{display:none}}
-/*# sourceMappingURL=/carusel/src.446e7d94.css.map */
+/*# sourceMappingURL=/carusel/src.2744d731.css.map */
