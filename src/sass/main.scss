@@ -1,7 +1,14 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+// breakpoints
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1024px;
+
+.is-hidden {
+  display: none;
+}
 
 // Стили для файла с примером HTML-фрагмента
-@import './example';
+// @import './example';
+// @import './clickabeList';
+@import './counterSomething';
+

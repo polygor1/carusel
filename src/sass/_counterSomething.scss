@@ -1,0 +1,57 @@
+// .count__item .is-hidden {
+//   display: none;
+// }
+
+.count {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.333;
+
+  
+
+  &__list {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
+    &.is-hidden {
+      display: none;
+    }
+  }
+
+  &__current {
+    color: #fff;
+    background-color: #FF6B08;
+  }
+
+  &__arrow {
+    background-color: #f7f7f7;
+  }
+
+  &__decor {
+    &:hover {
+      cursor: default;
+    }
+  }
+}
+
+.count__start,
+.count__end,
+.count__decor {
+  @media screen and (max-width: ($tablet - 1px)) {
+    display: none;
+  }
+}
