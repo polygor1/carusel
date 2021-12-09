@@ -11,4 +11,4 @@ var e,t=arguments[3];!function(t,r){"object"==typeof exports&&"object"==typeof m
 },{"../templates/countSomTmpl":"UIvo"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");var e=s(require("./js/counterSomething"));function s(e){return e&&e.__esModule?e:{default:e}}const r=e=>{console.log(">>>",e,"<<<")};(0,e.default)(2,3,100,r);
 },{"./sass/main.scss":"clu1","./js/counterSomething":"hJkr"}]},{},["Focm"], null)
-//# sourceMappingURL=/carusel/src.30be6c05.js.map
+//# sourceMappingURL=/paginator/src.30be6c05.js.map
