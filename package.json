@@ -1,22 +1,22 @@
 {
-  "name": "carusel",
+  "name": "paginator",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://polygor1.github.io/carusel",
+  "homepage": "https://polygor1.github.io/paginator",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /carusel/"
+    "build": "parcel build src/*.html --public-url /paginator/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/polygor1/carusel.git"
+    "url": "git+https://github.com/polygor1/paginator.git"
   },
   "keywords": [],
   "author": "Igor Polyakov <polygor@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/polygor1/carusel/issues"
+    "url": "https://github.com/polygor1/paginator/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
