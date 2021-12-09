@@ -1,3 +1,3 @@
-# parcel-project-template
+# paginator
 
-parcel-project-template
+page counter
